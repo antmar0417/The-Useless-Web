@@ -24,7 +24,7 @@
 
 :root {
   /* Font sizes */
-  --h1-large: 2.25rem;
+  --h1-large: 4em;
   --h1: 1.5rem;
   --nav-link-size: 20px;
   --p: 1rem;
@@ -39,7 +39,7 @@
   --color-almost-black: #35393a;
 
   /* Font family */
-  --font-h1: OpenSans-VariableFont_wdth;
+  --font-title: OpenSans-VariableFont_wdth;
 }
 
 html {
