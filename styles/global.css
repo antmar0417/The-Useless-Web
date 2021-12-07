@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'OpenSans-VariableFont_wdth';
+  src: local('OpenSans-VariableFont_wdth'),
+    /* Get the user's local font if it exists */
+      url('/fonts/OpenSans-VariableFont_wdth.ttf') format('woff2'),
+    url('/fonts/OpenSans-VariableFont_wdth.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'OpenSans-Italic-VariableFont_wdth';
+  src: local('OpenSans-Italic-VariableFont_wdth'),
+    /* Get the user's local font if it exists */
+      url('/fonts/OpenSans-Italic-VariableFont_wdth.ttf') format('woff2'),
+    url('/fonts/OpenSans-Italic-VariableFont_wdth.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Cookie-Regular';
+  src: local('Cookie-Regular'),
+    /* Get the user's local font if it exists */
+      url('/fonts/Cookie-Regular.ttf') format('woff2'),
+    url('/fonts/Cookie-Regular.ttf') format('woff');
+}
+
 :root {
   /* Font sizes */
   --h1-large: 2.25rem;
@@ -15,7 +39,7 @@
   --color-almost-black: #35393a;
 
   /* Font family */
-  --font-family-base: Helvetica, Arial, sans-serif;
+  --font-h1: OpenSans-VariableFont_wdth;
 }
 
 html {
