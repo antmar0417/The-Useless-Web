@@ -8,15 +8,11 @@
 
   /* Colors */
   --color-white: #fff;
-  --color-black: #000;
   --color-almost-white: #e6e6e6;
+  --color-black: #000;
   --color-light-grey: #8f8f8f;
   --color-grey: #444444;
   --color-almost-black: #35393a;
-  --color-blue: #1ee2e7;
-  --color-almost-green: #17d0d5;
-  --color-almost-blue: #5fa2c8;
-  --color-red: #e74c3c;
 
   /* Font family */
   --font-family-base: Helvetica, Arial, sans-serif;
