@@ -1,0 +1,27 @@
+:root {
+  /* Font sizes */
+  --h1-large: 2.25rem;
+  --h1: 1.5rem;
+  --nav-link-size: 20px;
+  --p: 1rem;
+  --p-small: 0.75rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-almost-white: #e6e6e6;
+  --color-light-grey: #8f8f8f;
+  --color-grey: #444444;
+  --color-almost-black: #35393a;
+  --color-blue: #1ee2e7;
+  --color-almost-green: #17d0d5;
+  --color-almost-blue: #5fa2c8;
+  --color-red: #e74c3c;
+
+  /* Font family */
+  --font-family-base: Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
