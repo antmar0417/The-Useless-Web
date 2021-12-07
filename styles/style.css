@@ -26,3 +26,9 @@
 body {
   background: var(--color-almost-black);
 }
+
+.container {
+  background-color: turquoise;
+  height: 330px;
+  width: 100%;
+}
