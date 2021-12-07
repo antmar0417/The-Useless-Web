@@ -25,10 +25,11 @@
 :root {
   /* Font sizes */
   --h1-large: 4em;
-  --h1: 1.5rem;
+  --h1-middle: 2.8em;
+  --h1: 1.5em;
   --nav-link-size: 20px;
-  --p: 1rem;
-  --p-small: 0.75rem;
+  --p: 1em;
+  --p-small: 0.75em;
 
   /* Colors */
   --color-white: #fff;
@@ -37,6 +38,7 @@
   --color-light-grey: #8f8f8f;
   --color-grey: #444444;
   --color-almost-black: #35393a;
+  --color-red: rgb(255, 99, 71);
 
   /* Font family */
   --font-title: OpenSans-VariableFont_wdth;
