@@ -2,24 +2,24 @@
   font-family: 'OpenSans-VariableFont_wdth';
   src: local('OpenSans-VariableFont_wdth'),
     /* Get the user's local font if it exists */
-      url('/fonts/OpenSans-VariableFont_wdth.ttf') format('woff2'),
-    url('/fonts/OpenSans-VariableFont_wdth.ttf') format('woff');
+      url('../fonts/OpenSans-VariableFont_wdth.ttf') format('woff2'),
+    url('../fonts/OpenSans-VariableFont_wdth.ttf') format('woff');
 }
 
 @font-face {
   font-family: 'OpenSans-Italic-VariableFont_wdth';
   src: local('OpenSans-Italic-VariableFont_wdth'),
     /* Get the user's local font if it exists */
-      url('/fonts/OpenSans-Italic-VariableFont_wdth.ttf') format('woff2'),
-    url('/fonts/OpenSans-Italic-VariableFont_wdth.ttf') format('woff');
+      url('../fonts/OpenSans-Italic-VariableFont_wdth.ttf') format('woff2'),
+    url('../fonts/OpenSans-Italic-VariableFont_wdth.ttf') format('woff');
 }
 
 @font-face {
   font-family: 'Cookie-Regular';
   src: local('Cookie-Regular'),
     /* Get the user's local font if it exists */
-      url('/fonts/Cookie-Regular.ttf') format('woff2'),
-    url('/fonts/Cookie-Regular.ttf') format('woff');
+      url('../fonts/Cookie-Regular.ttf') format('woff2'),
+    url('../fonts/Cookie-Regular.ttf') format('woff');
 }
 
 :root {
