@@ -32,3 +32,17 @@ body {
   height: 330px;
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .container {
+    background-color: rgb(224, 64, 152);
+    height: 630px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    background-color: rgb(101, 224, 64);
+    height: 630px;
+  }
+}
