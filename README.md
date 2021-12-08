@@ -2,7 +2,7 @@
 
 # The Useless Web
 
-That is our first individual assignment. The purpose was to create a JavaScript application of choice using HTML, CSS and JavaScript. I chose to make a . Here is the site address: 
+That is our first individual assignment. The purpose was to create a JavaScript application of choice using HTML, CSS and JavaScript. I chose to make a . Here is the site address:
 
 # Installation
 
