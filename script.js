@@ -37,7 +37,7 @@ function dispplayPhotos() {
     const item = document.createElement('a');
 
     setAttributes(item, {
-      href: photo.links.html,
+      href: photo.links.download,
       target: '_blank',
     });
 
