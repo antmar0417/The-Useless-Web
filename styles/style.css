@@ -45,6 +45,16 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.image-container {
+  margin: 10px 5%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 8px;
+}
+
 .container {
   background-color: turquoise;
   height: 330px;
@@ -58,9 +68,14 @@ body {
     height: 630px;
     border-bottom-style: solid;
   }
+
   .site-title {
     font-size: var(--h1-middle);
     letter-spacing: 1.5px;
+  }
+
+  .image-container {
+    margin: 10px 10%;
   }
 }
 
