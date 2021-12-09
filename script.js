@@ -3,34 +3,36 @@ const loader = document.getElementById('loader');
 
 let count = 0;
 let intFrameWith = window.innerWidth;
+let titleText = document.querySelector('#site-title');
 
 // console.log(intFrameWith);
 if (intFrameWith >= 1024) {
+  titleText.textContent = 'Scroll Down To See More Images';
   count = 9;
 }
 if (intFrameWith < 1024 && intFrameWith >= 768) {
+  titleText.textContent = 'Scroll Down To See More';
   count = 6;
 }
 if (intFrameWith < 768) {
+  titleText.textContent = 'Scroll Down';
   count = 3;
 }
 console.log(count);
 
-// let widthOutput = document.querySelector('#site-title');
-// window.addEventListener('resize', () => {
-//   widthOutput = window.innerWidth;
-//   // console.log(widthOutput);
-//   if (widthOutput >= 1024) {
-//     count = 6;
-//   }
-//   if (widthOutput < 1024 && widthOutput >= 768) {
-//     count = 4;
-//   }
-//   if (widthOutput < 768) {
-//     count = 3;
-//   }
-//   console.log(count);
-// });
+window.addEventListener('resize', () => {
+  let widthOutput = window.innerWidth;
+  // console.log(widthOutput);
+  if (widthOutput >= 1024) {
+    titleText.textContent = 'Scroll Down To See More Images';
+  }
+  if (widthOutput < 1024 && widthOutput >= 768) {
+    titleText.textContent = 'Scroll Down To See More';
+  }
+  if (widthOutput < 768) {
+    titleText.textContent = 'Scroll Down';
+  }
+});
 
 let ready = false;
 let imagesLoaded = 0;
