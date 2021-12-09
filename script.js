@@ -85,6 +85,10 @@ function dispplayPhotos() {
     const text = document.createElement('span');
     text.innerText = `Click on the image to download`;
 
+    text.id = '::span-text';
+    text.style.cssText =
+      'text-align: center; padding-right: auto; padding-left: 4.5rem;width: 400px; background-color: red; color: white;';
+
     // text.style = `color:white`;
     // text.style = `text-align: center`;
     // article.appendChild(text);
