@@ -80,7 +80,6 @@ function dispplayPhotos() {
       src: photo.urls.regular,
       alt: photo.alt_description,
       title: `likes: ${photo.likes}`,
-      text: `Download The Image`,
     });
     img.addEventListener('load', imageLoaded);
     item.appendChild(img);
