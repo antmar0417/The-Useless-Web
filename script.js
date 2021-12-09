@@ -69,7 +69,7 @@ function dispplayPhotos() {
     const item = document.createElement('a');
 
     setAttributes(item, {
-      href: photo.links.download,
+      href: photo.links.html,
       target: '_blank',
     });
 
