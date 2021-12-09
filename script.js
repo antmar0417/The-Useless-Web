@@ -81,27 +81,10 @@ function dispplayPhotos() {
       alt: photo.alt_description,
       title: `likes: ${photo.likes}`,
     });
-    // ---Test to add a text as hover---
-    const text = document.createElement('span');
-    text.innerText = `Click on the image to download`;
-
-    text.id = '::span-text';
-    text.style.cssText =
-      'text-align: center; padding-right: auto; padding-left: 4.5rem;width: 400px; background-color: red; color: white;';
-
-    // text.setAttribute("style", "background-color:red; font-size:2em;");
-    // text.style = `color:white`;
-    // text.style = `text-align: center`;
-    // article.appendChild(text);
-    //       ---End---
 
     img.addEventListener('load', imageLoaded);
     item.appendChild(img);
     imageContainer.appendChild(item);
-
-    if (intFrameWith < 768) {
-      imageContainer.appendChild(text);
-    }
   });
 }
 
