@@ -81,9 +81,19 @@ function dispplayPhotos() {
       alt: photo.alt_description,
       title: `likes: ${photo.likes}`,
     });
+    // ---Test to add a text as hover---
+    const text = document.createElement('span');
+    text.innerText = `Click on the image to download`;
+
+    // text.style = `color:white`;
+    // text.style = `text-align: center`;
+    // article.appendChild(text);
+    //       ---End---
+
     img.addEventListener('load', imageLoaded);
     item.appendChild(img);
     imageContainer.appendChild(item);
+    imageContainer.appendChild(text);
   });
 }
 
@@ -94,7 +104,7 @@ async function getPhotos() {
     dispplayPhotos();
     console.log(photosArray);
   } catch (error) {
-    //Catch Error Here
+    window.alert('Try again later!');
   }
 }
 
