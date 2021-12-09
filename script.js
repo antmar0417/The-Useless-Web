@@ -20,6 +20,16 @@ if (intFrameWith < 768) {
 }
 console.log(count);
 
+let ready = false;
+let imagesLoaded = 0;
+let totalImages = 0;
+let photosArray = [];
+let initialLoad = true;
+
+// Unsplash API
+const apiKey = 'XuMYouBC7zDdVoDKQuZz38cIER7sZoivTbq_b1wt7cQ';
+let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+
 window.addEventListener('resize', () => {
   let widthOutput = window.innerWidth;
   // console.log(widthOutput);
@@ -33,16 +43,6 @@ window.addEventListener('resize', () => {
     titleText.textContent = 'Scroll Down';
   }
 });
-
-let ready = false;
-let imagesLoaded = 0;
-let totalImages = 0;
-let photosArray = [];
-let initialLoad = true;
-
-// Unsplash API
-const apiKey = 'XuMYouBC7zDdVoDKQuZz38cIER7sZoivTbq_b1wt7cQ';
-let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
 function imageLoaded() {
   imagesLoaded++;
