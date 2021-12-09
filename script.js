@@ -98,7 +98,10 @@ function dispplayPhotos() {
     img.addEventListener('load', imageLoaded);
     item.appendChild(img);
     imageContainer.appendChild(item);
-    imageContainer.appendChild(text);
+
+    if (intFrameWith < 768) {
+      imageContainer.appendChild(text);
+    }
   });
 }
 
