@@ -42,6 +42,7 @@
 
   /* Font family */
   --font-title: OpenSans-VariableFont_wdth;
+  --font-image-hover: Cookie-Regular;
 }
 
 html {
