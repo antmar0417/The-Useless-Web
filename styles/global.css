@@ -6,43 +6,20 @@
     url('../fonts/OpenSans-VariableFont_wdth.ttf') format('woff');
 }
 
-@font-face {
-  font-family: 'OpenSans-Italic-VariableFont_wdth';
-  src: local('OpenSans-Italic-VariableFont_wdth'),
-    /* Get the user's local font if it exists */
-      url('../fonts/OpenSans-Italic-VariableFont_wdth.ttf') format('woff2'),
-    url('../fonts/OpenSans-Italic-VariableFont_wdth.ttf') format('woff');
-}
-
-@font-face {
-  font-family: 'Cookie-Regular';
-  src: local('Cookie-Regular'),
-    /* Get the user's local font if it exists */
-      url('../fonts/Cookie-Regular.ttf') format('woff2'),
-    url('../fonts/Cookie-Regular.ttf') format('woff');
-}
-
 :root {
   /* Font sizes */
   --h1-large: 3.5em;
   --h1-middle: 2.8em;
   --h1: 1.5em;
-  --nav-link-size: 20px;
-  --p: 1em;
-  --p-small: 0.75em;
 
   /* Colors */
   --color-white: #fff;
-  --color-almost-white: #e6e6e6;
-  --color-light-grey: #8f8f8f;
-  --color-grey: #444444;
   --color-almost-black: #35393a;
-  --color-black: #000;
   --color-red: rgb(255, 99, 71);
+  --color-loader: rgba(255, 255, 255, 0.8);
 
   /* Font family */
   --font-title: OpenSans-VariableFont_wdth;
-  --font-image-hover: Cookie-Regular;
 }
 
 html {
