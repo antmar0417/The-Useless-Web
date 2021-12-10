@@ -6,7 +6,7 @@ let intFrameWith = window.innerWidth;
 let titleText = document.querySelector('#site-title');
 let titleBackgroundColor = document.querySelector('.site-title');
 
-// console.log(intFrameWith);
+// Checking the frame width and changing the title text and the number of images on load
 if (intFrameWith >= 1024) {
   titleText.textContent = 'Scroll Down To See More Images';
   count = 9;
@@ -19,38 +19,37 @@ if (intFrameWith < 768) {
   titleText.textContent = 'Scroll Down';
   count = 3;
 }
-console.log(count);
 
 let ready = false;
 let imagesLoaded = 0;
 let totalImages = 0;
 let photosArray = [];
+var colors = [];
 let initialLoad = true;
 
 // Unsplash API
 const apiKey = 'XuMYouBC7zDdVoDKQuZz38cIER7sZoivTbq_b1wt7cQ';
 let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
-// On click changes the background color of h1
+// Filling the array with random colors
+while (colors.length < 100) {
+  colors.push(`rgb(${rand(0, 255)}, ${rand(0, 255)}, ${rand(0, 255)})`);
+}
+
+// Random number generator
+function rand(frm, to) {
+  return ~~(Math.random() * (to - frm)) + frm;
+}
+
+// On click changes the background on text-title
 titleBackgroundColor.addEventListener('click', () => {
   titleBackgroundColor.style.backgroundColor =
     colors[Math.floor(Math.random() * colors.length)];
 });
 
-var colors = [];
-while (colors.length < 100) {
-  colors.push(`rgb(${rand(0, 255)}, ${rand(0, 255)}, ${rand(0, 255)})`);
-}
-console.log(colors);
-
-// random number generator
-function rand(frm, to) {
-  return ~~(Math.random() * (to - frm)) + frm;
-}
-
+// Changing the title text when the user resizes the frame
 window.addEventListener('resize', () => {
   let widthOutput = window.innerWidth;
-  // console.log(widthOutput);
   if (widthOutput >= 1024) {
     titleText.textContent = 'Scroll Down To See More Images';
   }
@@ -62,6 +61,7 @@ window.addEventListener('resize', () => {
   }
 });
 
+// Checking if the images are loaded
 function imageLoaded() {
   imagesLoaded++;
   //console.log(imagesLoaded)
@@ -74,16 +74,19 @@ function imageLoaded() {
   }
 }
 
+// Setting attributes on DOM elements
 function setAttributes(element, attributes) {
   for (const key in attributes) {
     element.setAttribute(key, attributes[key]);
   }
 }
 
+// This function creates elements for links & photos and adds them to the DOM
 function dispplayPhotos() {
   imagesLoaded = 0;
   totalImages = photosArray.length;
   photosArray.forEach((photo) => {
+    // Creates <a> to link to Unsplash
     const item = document.createElement('a');
 
     setAttributes(item, {
@@ -106,6 +109,7 @@ function dispplayPhotos() {
   });
 }
 
+// Gets photos from Unsplash API
 async function getPhotos() {
   try {
     const response = await fetch(apiUrl);
@@ -117,6 +121,7 @@ async function getPhotos() {
   }
 }
 
+// Checking to see if scrolling near bottom of page to load more photos
 window.addEventListener('scroll', () => {
   if (
     window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 &&
@@ -125,6 +130,5 @@ window.addEventListener('scroll', () => {
     ready = false;
     getPhotos();
   }
-  //console.log('scrolled');
 });
 getPhotos();
