@@ -1,10 +1,15 @@
 const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
-
+const titleText = document.querySelector('#site-title');
+const titleBackgroundColor = document.querySelector('.site-title');
+const intFrameWith = window.innerWidth;
 let count = 0;
-let intFrameWith = window.innerWidth;
-let titleText = document.querySelector('#site-title');
-let titleBackgroundColor = document.querySelector('.site-title');
+let imagesLoaded = 0;
+let totalImages = 0;
+let photosArray = [];
+let colors = [];
+let ready = false;
+let initialLoad = true;
 
 // Checking the frame width and changing the title text and the number of images on load
 if (intFrameWith >= 1024) {
@@ -19,13 +24,6 @@ if (intFrameWith < 768) {
   titleText.textContent = 'Scroll Down';
   count = 3;
 }
-
-let ready = false;
-let imagesLoaded = 0;
-let totalImages = 0;
-let photosArray = [];
-var colors = [];
-let initialLoad = true;
 
 // Unsplash API
 const apiKey = 'XuMYouBC7zDdVoDKQuZz38cIER7sZoivTbq_b1wt7cQ';
@@ -64,7 +62,6 @@ window.addEventListener('resize', () => {
 // Checking if the images are loaded
 function imageLoaded() {
   imagesLoaded++;
-  //console.log(imagesLoaded)
 
   if (imagesLoaded === totalImages) {
     ready = true;
@@ -115,7 +112,6 @@ async function getPhotos() {
     const response = await fetch(apiUrl);
     photosArray = await response.json();
     dispplayPhotos();
-    console.log(photosArray);
   } catch (error) {
     window.alert('Try again later!');
   }
