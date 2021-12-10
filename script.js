@@ -4,6 +4,7 @@ const loader = document.getElementById('loader');
 let count = 0;
 let intFrameWith = window.innerWidth;
 let titleText = document.querySelector('#site-title');
+let titleBackgroundColor = document.querySelector('.site-title');
 
 // console.log(intFrameWith);
 if (intFrameWith >= 1024) {
@@ -29,6 +30,23 @@ let initialLoad = true;
 // Unsplash API
 const apiKey = 'XuMYouBC7zDdVoDKQuZz38cIER7sZoivTbq_b1wt7cQ';
 let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+
+// On click changes the background color of h1
+titleBackgroundColor.addEventListener('click', () => {
+  titleBackgroundColor.style.backgroundColor =
+    colors[Math.floor(Math.random() * colors.length)];
+});
+
+var colors = [];
+while (colors.length < 100) {
+  colors.push(`rgb(${rand(0, 255)}, ${rand(0, 255)}, ${rand(0, 255)})`);
+}
+console.log(colors);
+
+// random number generator
+function rand(frm, to) {
+  return ~~(Math.random() * (to - frm)) + frm;
+}
 
 window.addEventListener('resize', () => {
   let widthOutput = window.innerWidth;
