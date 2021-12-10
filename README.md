@@ -10,22 +10,19 @@ To run this project follow the steps below:
 
 -   Open the terminal and change the current working directory to the location where you want the cloned directory.
 
--   Clone the project by pasting the command below
+-   Clone the project from
 
     ```
-    git clone https://github.com/
+    https://github.com/antmar0417/The-Useless-Web.git
     ```
 
--   Start the server by typing
+-   Start the server by pressing on Go Live button
 
     ```
-    XXXXXX
+    Go Live
     ```
 
--   Open up you browser and paste in this link:
-    ```
-    http://
-    ```
+-   And you should be able to see the website
 
 # Code Review
 
