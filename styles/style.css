@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: var(--color-almost-black);
+}
+
 .site-title {
   top: 0;
   position: sticky;
@@ -24,10 +28,6 @@
     0 0.5px 1.5px rgba(0, 0, 0, 0.3), 0 1.5px 2.5px rgba(0, 0, 0, 0.2),
     0 2.5px 5px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.2),
     0 10px 10px rgba(0, 0, 0, 0.15);
-}
-
-body {
-  background: var(--color-almost-black);
 }
 
 .loader {
@@ -86,11 +86,6 @@ body {
 
 /* Media for desktop */
 @media (min-width: 1024px) {
-  .container {
-    background-color: rgb(101, 224, 64);
-    height: 630px;
-    border-bottom-style: solid;
-  }
   .site-title {
     font-size: var(--h1-large);
     cursor: pointer;
