@@ -91,7 +91,7 @@ function dispplayPhotos() {
       target: '_blank',
     });
 
-    // Create <img> for photo
+    // Creates <img> for photo
     const img = document.createElement('img');
 
     setAttributes(img, {
