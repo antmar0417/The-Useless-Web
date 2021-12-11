@@ -31,7 +31,7 @@ To run this project follow the steps below:
 -   Start the server by pressing on Go Live button. It should look like the picture below:
 
 <div align="center">
-    <img src="./images/go-live.png" width="100px" border-radius="8px">
+    <img src="./images/go-live.png" width="100px">
 </img> 
 </div>
 
