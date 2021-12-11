@@ -11,6 +11,7 @@ That is our first individual JavaScript assignment. The purpose was to create a 
     <img src="./images/likes.png" width="400px"></img> 
 </div>
 
+-   By clicking on a certain image you will be redirected to unsplash.com. There you will be able to see the fullscreen photo and download it for free if desired.
 -   I've enabled a loading gif while images are loading.
 -   The number of uploaded images on load changes depending on the screen type (mobile, tablet, and desktop).
 -   You can change the background color of the header when you click on it.
