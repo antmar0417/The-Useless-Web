@@ -8,7 +8,7 @@ That is our first individual JavaScript assignment. The purpose was to create a 
 -   Responsive design for mobile, tablet and desktop.
 -   It's possible to hover on each picture and see the number of likes for each picture. Observe that this only applies to desktops. Sometimes you need to wait about one second to be able to see this information. See the picture below:
 <div align="center">
-    <img src="./images/likes.png" width="400px"</img> 
+    <img src="./images/likes.png" width="400px"></img> 
 </div>
 
 -   I've enabled a loading gif while images are loading.
@@ -31,7 +31,7 @@ To run this project follow the steps below:
 -   Start the server by pressing on Go Live button. It should look like the picture below:
 
 <div align="center">
-    <img src="./images/go-live.png" width="100px" border-radius="8px";
+    <img src="./images/go-live.png" width="100px" border-radius="8px">
 </img> 
 </div>
 
