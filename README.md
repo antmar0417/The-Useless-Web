@@ -6,7 +6,7 @@ That is our first individual JavaScript assignment. The purpose was to create a 
 
 -   Application will be in demo mode and will be rate-limited to 50 requests per hour. Read more here: https://unsplash.com/documentation
 -   Responsive design for mobile, tablet and desktop.
--   It's possible to hover on each picture and see the number of likes for each picture. Observe that this only applies to desktops. Sometimes you need to wait about one second to be able to see the number of likes for each image. See the picture below:
+-   It's possible to hover on each picture and see the number of likes for each picture. Observe that this only applies to desktops. Sometimes you need to wait about one second to be able to see this information. See the picture below:
 <div align="center">
     <img src="./images/likes.png" width="400px"</img> 
 </div>
