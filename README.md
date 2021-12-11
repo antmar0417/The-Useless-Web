@@ -30,9 +30,9 @@ To run this project follow the steps below:
 
 -   Start the server by pressing on Go Live button.
 
-    ```
-    Go Live
-    ```
+<div align="center">
+    <img src="./images/go-live.png" width="100px"</img> 
+</div>
 
 -   And you should be able to see the website.
 
