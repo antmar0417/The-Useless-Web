@@ -30,7 +30,7 @@ To run this project follow the steps below:
 
 -   Start the server by pressing on Go Live button.
 
-<div align="left">
+<div align="center">
     <img src="./images/go-live.png" width="100px"</img> 
 </div>
 
