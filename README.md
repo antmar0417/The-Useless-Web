@@ -28,7 +28,7 @@ To run this project follow the steps below:
     https://github.com/antmar0417/The-Useless-Web.git
     ```
 
--   Start the server by pressing on Go Live button.
+-   Start the server by pressing on Go Live button. It should look like the picture below:
 
 <div align="center">
     <img src="./images/go-live.png" width="100px"</img> 
