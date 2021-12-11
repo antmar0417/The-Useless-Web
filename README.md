@@ -22,8 +22,6 @@ Thank you for visiting my site!
 
 To run this project follow the steps below:
 
--   Open the terminal and change the current working directory to the location where you want the cloned directory.
-
 -   Go to the address below and clone the project.
 
     ```
