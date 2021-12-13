@@ -57,4 +57,4 @@ Overall you've done a great job with good consistancy and good use of comments t
 Tested by the following people:
 
 1. Emma Ramstedt
-2. John Doe
+2. Christopher Michael
