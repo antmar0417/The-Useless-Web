@@ -52,7 +52,6 @@ Code review written by Christopher:
 
 Overall you've done a great job with good consistancy and good use of comments throughout the code. Well done!
 
-
 # Testers
 
 Tested by the following people:
