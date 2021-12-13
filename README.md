@@ -41,13 +41,17 @@ To run this project follow the steps below:
 
 # Code Review
 
-Code review written by:
+Code review written by Christopher:
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. `Fonts` - Loading two extra fonts thats not being used. 'Cookie-Regular' and 'KaiseiTokumin-Regular'.
+2. `global.css:5-6` - Wrong format on Fonts, and missing two font-types (Woff and Woff2).
+3. `script.js:5` - (Minor) A small spelling misstake. 'intFrameWi(d)th'.
+4. `script.js:15-26` - (Minor) Your IF-statements could probably be a function instead.
+5. `style.css:27-30` - (Minor) You could probably go a bit easier with the shadows. Kind of poor readability as it is now.
+6. Getting a error when realoding the page with a alert saying "Try again later!". Loading animation gets stuck. Nothing happens when you dismiss the alert.
+
+Overall you've done a great job with good consistancy and good use of comments throughout the code. Well done!
+
 
 # Testers
 
